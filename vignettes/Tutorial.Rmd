@@ -53,6 +53,7 @@ tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95
 ### spearmantest
 Example:
 ```{r}
+# built-in
 
 ```
 
