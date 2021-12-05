@@ -10,9 +10,6 @@ spearmantest.exact <- function() {
   # P-Value
   pval <- (1-pSpearman(rs, n))
 
-  # Built-in
-  rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
-
   results <- data.frame('Quantity' = c("Test Statistic (rs)","Critical Value", "P-Value"),
                         'By-Hand' = c(rs, rsalpha, pval),
                         'Built-In Func' = c(rsa$estimate, NA, rsa$p.value))

@@ -24,9 +24,6 @@ kendalltest.exact <- function() {
   # P-Value
   p.val <- 1 - pKendall(Kbar, N = n)
 
-  # built-in
-  tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
-
   results <- data.frame('Quantity' = c("Test Statistic (K)", "Test Statistic (KBar)","Critical Value",
                                        "P-Value"),
                         'By-Hand' = c(K, Kbar, kalpha, p.val),

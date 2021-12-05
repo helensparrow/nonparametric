@@ -15,22 +15,54 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(nonpara625)
+#library(nonpara625)
 ```
 
 
-# Functions
 
 ### wilcoxontest
+Example:
+```{r}
+
+```
+
+
+
+Comparision:
+```{r}
+
+```
 
 
 
 ### kendalltest
+Example:
+```{r}
 
+```
+
+
+
+Comparision:
+```{r}
+# built-in
+tt <- cor.test(x = data$dpp, y = data$pct, method = "kendall", conf.level = 0.95, alternative = "greater")
+```
 
 
 ### spearmantest
+Example:
+```{r}
 
+```
+
+
+
+Comparision:
+```{r}
+# built-in
+rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
+```
 
 
 
