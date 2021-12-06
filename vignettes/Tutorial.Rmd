@@ -61,7 +61,7 @@ Example:
 
 Comparision:
 ```{r}
-# built-in
+# built-inn
 rsa <- cor.test(x = data$dpp, y = data$pct, method = "spearman", conf.level = 0.95, alternative = "greater")
 ```
 
